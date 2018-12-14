@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/select_categories.css">
+    </head>
+<body>
+            <video autoplay muted id="myvideo" loop>
+                <source src="tech.mp4" type="video/mp4">
+            </video>
+    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-center" style="overflow-y: scroll">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" onclick="myfun()" style="color: maroon">&times;</button>
+            <h3 class="modal-title" style="color: maroon;font-weight: bold;font-family: 'Allerta', sans-serif;">Select Topics Of Your Interest</h3>
+        </div>
+          <form action="mainpage" method="post">
+        <div class="modal-body bootmodal">
+            <input name="SelectedValues" type="hidden" value="">
+              <label class="col-sm-3 image" style="background-image: url(/images/c++.jpeg)">
+                  <label class="container"><input type="checkbox" name="category_select" value="c++"><span class="checkmark"></span></label>
+                  <b>C++</b>
+                </label>
+              <label class="col-sm-3 image" style="background-image: url(/images/HTML.jpeg)">
+                  <label class="container"><input type="checkbox" name="category_select" value="html"><span class="checkmark"></span></label>
+                  <b>HTML</b>
+                </label>
+             <label class="col-sm-3 image" style="background-image: url(/images/css.gif);background-position: center">
+                 <label class="container"><input type="checkbox" name="category_select" value="css"><span class="checkmark"></span></label>
+                 <b>css</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/react.jpeg)">
+                    <label class="container"><input type="checkbox" name="category_select" value="reactjs"><span class="checkmark"></span></label>
+                    <b>ReactJS</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/python.jpeg)">
+                    <label class="container"><input type="checkbox" name="category_select" value="python"><span class="checkmark"></span></label>
+                    <b>Python</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/bootstrap.gif)">
+                    <label class="container"><input type="checkbox" name="category_select" value="bootstrap"><span class="checkmark"></span></label>
+                    <b>Bootstrap</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/asp.jpeg); background-position: center">
+                    <label class="container"><input type="checkbox" name="category_select" value="asp"><span class="checkmark"></span></label>
+                    <b>ASP.NET</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/linux.jpg)">
+                    <label class="container"><input type="checkbox" name="category_select" value="linux"><span class="checkmark"></span></label>
+                    <b>Linux</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/php.jpeg);background-position: center">
+                    <label class="container"><input type="checkbox" name="category_select" value="php"><span class="checkmark"></span></label>
+                    <b>PHP</b>
+                </label>
+                <label class="col-sm-3 image" style="background-image: url(/images/mongo.jpeg);background-position:center">
+                    <label class="container"><input type="checkbox" name="category_select" value="mongodb"><span class="checkmark"></span></label>
+                    <b>Mongodb</b>
+                </label>
+                
+                <label class="col-sm-3 image" style="background-image: url(/images/nodejs.png)">
+                    <label class="container"><input type="checkbox" name="category_select" value="node"><span class="checkmark"></span></label>
+                    <b>Node.JS</b>
+                </label>
+                
+                
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary bottom-right" >submit</button>
+        </div>
+          </form>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="/js/select_categories.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-height: 600px;
+    min-width: 100%;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width:600px)
+{
+    #myvideo{
+        position: fixed;
+        right:0;
+        bottom:0;
+        min-height: 1200px;
+        min-width: 100px;
+        background-repeat: no-repeat;
+    }
+}
+body{
+    padding: 0;
+    margin:0;
+}
+.w3-myfont{
+    margin-left: 5%;
+    position: relative;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.login_form{
+    position:relative;
+    width:40%;
+    height: 75%;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+/*@media only screen and (max-width:600px)
+{
+    .signup_form{
+        position: relative;
+        width:100%;
+        height:50%;
+        margin-right:10px;
+    }
+}*/
+.labels_of_form{
+    color: maroon;
+}
+.labels_of_form b{
+    font-family: 'Allerta', sans-serif;
+}
+@media only screen and (max-width:600px)
+{
+    .labels_of_form{
+        color:maroon;
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:600px)  
+{
+    .inputbox{
+        height:60px;
+        font-size: 30px;
+    }
+}
+#login{
+    position: relative;
+}
+@media only screen and (max-width:600px)
+{
+    .login_form_main{
+        position: relative;
+        margin-top: 300px;
+        margin-left: 80px;
+    }
+}
+.close_btn{
+    background-color: transparent;
+    border:none;
+}
+.close_btn:hover{
+    background-color: maroon;
+}
+.box{
+    position:relative;
+    margin-left: 19%;
+    width:60%;
+    height:82%;
+    margin-top: 5%;
+}
+@media only screen and (max-width:600px)
+{
+    .box{
+        margin: 0;
+        position: relative;
+        width:100%;
+        height:100%;
+    }
+}
+.title{
+    position:relative;
+    height:28%;
+    padding: 30px;
+}
+@media only screen and (max-width:600px)
+{
+    .title{
+        position:relative;
+        background-color: maroon;
+        margin:0;
+        padding: 0;
+        height:22%;
+    }
+}
+.title b{
+    color: maroon;
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    transition: font-size 0.5s;
+    padding: 1px;
+}
+.title b:hover{
+    font-size: 54px;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+    padding: 2px;
+}
+@media only screen and (max-width:600px)
+{
+        .title b{
+            color: white;
+            font-size: 70px;
+            margin-right: 60px;
+        }
+}
+.title p{
+    color:maroon;
+    font-size: 17px;
+    transition: font-size 0.5s;
+    font-family: 'Libre Baskerville', serif;
+    padding: 2px;
+}
+.title p:hover{
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
+    padding: 2px;
+}
+@media only screen and (max-width:600px)
+{
+    .title p{
+        color:white;
+        font-size: 25px;
+        margin-right: 70px;
+    }
+}
+
+.login_button_link{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    color: maroon;
+    font-weight: bold;
+}
+@media only screen and (max-width:600px)
+{
+    .login_button_link{
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+        color: maroon;
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 80px;
+    }
+}
+.signupbtn{
+    border-radius: 5px;
+    background-color: maroon;
+    color: white;
+    height: 35px;
+    width: 100px;
+}
+.inputbox{
+    height: 30px;
+    margin-right: 30px;
+}
+@media only screen and (max-width:600px)
+{
+    .signupbtn{
+        background-color: maroon;
+        color:white;
+        height:60px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:600px)
+{
+    .already_ac{
+        font-size: 20px;
+    }
+}
+.loginbtn{
+    background-color: maroon;
+    color: white;
+    height:40px;
+}
+.login_with_google{
+    width:260px;
+    height:40px;
+    margin-left: 90px;
+    margin-top: -250px;
+    background-color: #E74B37;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 17px;
+    text-align: left;
+}
+.login_with_google:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.login_with_facebook{
+    width:260px;
+    height: 40px;
+    margin-left: 90px;
+    margin-top: -190px;
+    border-radius: 3px;
+    border:none;
+    background-color: #4C69BA;
+    color:white;
+    font-size: 17px;
+    text-align: left;
+
+}
+.login_with_facebook:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.icon_google{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.icon_facebook{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.policy{
+    position: relative;
+    margin-left: 90px;
+    margin-top: -130px;
+    font-size: 12px;
+}
+.signup_form{
+    display: none;
+    margin-left: 10%;
+    width: 40%;
+    margin-top: -37%;
+}
+.signup_email{
+    background-color: transparent;
+    border: none;
+    margin-left: -7px;
+}
+.line{
+    border-left: 4px solid gainsboro;
+    height: 300px;
+    margin-left: 52%;
+    margin-top: 4%;
+}
+.line2{
+    display: none;
+    border-left: 2px solid gainsboro;
+    height: 320px;
+    margin-left: 52%;
+}
+.login_forget{
+    padding-top: 20px;
+}
+.login_forget a{
+    color: grey;
+}
+/*.bootalertboxuser{
+    display: none;
+}
+.bootalertboxpass{
+    display: none;
+}*/

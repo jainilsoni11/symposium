@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="google-signin-client_id" content="889209787317-4eaknlrmt5u26eor917t3msnt7mbbqgd.apps.googleusercontent.com">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+            <video autoplay muted id="myvideo" loop>
+                <source src="tech.mp4" type="video/mp4">
+            </video>
+        <div class="w3-white box w3-animate-left"  id="box">
+            <div class="w3-bar w3-center title">
+                <b>SYMPOSIUM</b><br>
+                <p>AN ULTIMATE PLACE TO TEST YOUR TECHNICAL SKILLS</p>
+            </div>
+            <div class="w3-right login_form">
+                <form class="w3-margin" action="select_categories" method="post">
+                    <div class="form group">
+                        <label style="font-size: 20px">Login</label><br><br>
+                        <input type="email" name="emailid" placeholder="Enter Email Id" class="form-control" style="background-color: ghostwhite" required><br>
+                        <%if (usermsg !== null) {%>
+                        <div class="alert alert-danger bootalertboxuser">
+                            <p id="usermsg"><%= usermsg %></p>
+                        </div>
+                        <% } %>
+                        <input type="password" name="passwd" placeholder="Enter Password" class="form-control" style="background-color: ghostwhite" required><br>
+                        <%if (passwdmsg !== null) {%>
+                        <div class="alert alert-danger bootalertboxpass">
+                            <p id="passwdmsg"><%= passwdmsg %></p>
+                        </div>
+                        <% } %>
+                        <div class="login_forget">
+                            <a href="#">Forget Password?</a>
+                            <button class="btn w3-right" type="submit" style="background-color: maroon;color: white">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="line">
+            </div>
+            <%if (signupmsg == null) { %>
+            <div class="w3-left" id="signup_google_facebook">
+                <!--<div class="g-signin2" data-width="300" data-height="200" data-onsuccess="onSignIn"></div>-->
+                <button class=" login_with_google" data-onsuccess="onSignIn"><i class="fa fa-google icon_google"></i>SignIn With Google</button><br>
+                <button class="login_with_facebook"><i class="fa fa-facebook icon_facebook"></i>SignIn With Facebook</button><br>
+                <p class="policy"><a><button class="signup_email" onclick="document.getElementById('signup_google_facebook').style.display='none';document.getElementById('signup').style.display='block'">Continue With Email.</button></a> By signing up you indicate<br> that you have read and agree to Symposium's<br> <a href="#">Terms Of Service</a> and <a href="#">Privacy Policy.</a></p>
+            </div>
+            <% } %>
+            <div class="w3-left signup_form" id="signup">
+                <form class="w3-margin" action="login" method="post">
+                    <div class="form-group">
+                        <label style="font-size: 20px">SignUp</label><br><br>
+                        <%if (signupmsg != null) { %>
+                        <div class="alert alert-danger bootalertboxpass">
+                            <p id="signupmsg"><%= signupmsg %></p>
+                        </div>
+                        <% } %>
+                        <input type="text" name="dname" placeholder="Enter Display Name" class="form-control" style="background-color: ghostwhite" required><br>
+                        <input type="email" name="emailid" placeholder="Enter Email Id" class="form-control" id="emailid" style="background-color: ghostwhite"><br>
+                        <input id="passwd" type="password" name="passwd" class="form-control" placeholder="Enter Password" style="background-color: ghostwhite"><br>
+                        <button class="btn w3-right" type="submit" style="background-color: maroon;color: white">SignUp</button>
+                        <button class="btn w3-left" type="submit" onclick="document.getElementById('signup_google_facebook').style.display='block';document.getElementById('signup').style.display='none'">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="/js/home.js"></script>
+    </body>
+</html>

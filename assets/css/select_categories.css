@@ -1,0 +1,110 @@
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-height: 600px;
+            min-width: 100%;
+            background-repeat: no-repeat;
+        }
+        .image{
+            width:123px;
+            height:123px;
+            background-size:cover;
+            border-radius:10px;
+            margin:7px;
+            position:relative;
+            cursor:pointer;
+            overflow:hidden;
+          } 
+            .image > b{
+                position:absolute;
+                border-radius:4px;
+                padding:8px;
+                overflow:hidden;
+                opacity:1;
+                transition:.3s;
+                text-align:center;
+                margin-top: 80px;
+                color: white;
+                font-weight: bold;
+                font-size: 15px;
+              }
+            .modal-dialog{
+                overflow-y: initial !important;
+            }
+            .modal-body{
+                overflow-y: auto;
+                height: 250px;
+            }
+        .modal-dialog-center{
+            margin-top: 7%;
+        }
+        @media only screen and (max-width:385px){
+            .modal-dialog-center{
+                margin-top: 25%;
+            }
+        }
+        @media screen and (max-width:600px) and (min-width:385px){
+            .modal-dialog-center{
+                margin-top: 20%;
+            }
+        }
+        @media screen and (max-width:770px) and (min-width:600px){
+            .modal-dialog-center{
+                margin-top: 14%;
+            }
+        }
+        .bootmodal{
+            height:50%;
+        }
+        .container{
+            display: block;
+            position: relative;
+            cursor: pointer;
+            margin-right: 130px;
+            border-radius: 10px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkmark {
+                position: absolute;
+                top: 0;
+                right: 88px;
+                height: 20px;
+                width: 20px;
+                background-color: #eee;
+                border-radius: 3px;
+        }
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+        .container input:checked ~ .checkmark {
+            background-color: green;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .container .checkmark:after {
+              left: 9px;
+              top: 5px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+        }
+        

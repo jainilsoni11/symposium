@@ -1,0 +1,139 @@
+.symposium_logo{
+            font-size: 30px;
+            font-weight: bold;
+            color: maroon;
+        }
+        .symposium_logo:hover{
+            cursor: pointer;
+            color: darkred;
+        }
+        .btn_for_dropdown{
+            background-color: white;
+        }
+        .dropdown_btn{
+            background-color: maroon;
+        }
+        .menu_in_navigation{
+            color: black;
+        }
+        .general_text{
+            margin-left: 5px;
+            margin-top: 0;
+            font-size: 17px;
+        }
+        .ask_btn{
+            margin-top: 13px;
+            border: none;
+        }
+        nav{
+            background-color: white;
+        }
+        #myModal{
+            display: none;
+        }
+        .left_right_col{
+            margin-top: 58px;
+            background-color: ghostwhite;
+            min-height: 578px;
+        }
+        .my_card{
+            margin-top: 30px;
+            border: 1px solid gainsboro;
+        }
+        .my_card_profile{
+            margin-top: 30px;
+            border: 1px solid black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .name_of_person{
+            margin-top: 5%;
+            padding-left: 27%;
+            font-weight: bold;
+            font-size: 30px;
+            width: 100%;
+            background-color: ghostwhite;
+            border: none;
+            overflow-y: hidden;
+        }
+        .education{
+            font-weight: bold;
+            font-size: 20px;
+            background-color: ghostwhite;
+            border: none;
+            overflow-y: hidden;
+            width: 100%;
+            padding-left: 5%;
+            color: lightslategray;
+        }
+        .city{
+            font-weight: bold;
+            font-size: 20px;
+            background-color: ghostwhite;
+            border: none;
+            overflow-y: hidden;
+            width: 100%;
+            padding-left: 5%;
+            color: lightslategray;
+        }
+        .upvote_in_answers{
+            font-weight: bold;
+            overflow-y: hidden;
+            font-size: 20px;
+            color: lightslategray;
+            width: 100%;
+            padding-left: 5%;
+            border: none;
+            background-color: ghostwhite;
+        }
+        .all_videos{
+            width: 100%
+        }
+        .question{
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            color: black;
+        }
+        .btn_tags{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .upvote_count{
+            margin-left: 12px;
+            color: grey;
+            font-size: 15px;
+        }
+        .edit_profile{
+            width: 100%;
+            height: 50px;
+        }
+        .save_profile{
+            display: none;
+            width: 100%;
+            height: 50px;
+        }
+        .logout_btn{
+            margin-top: 13px;
+            margin-left: 10px;
+            border: none;
+        }
+        .profile_photo{
+            visibility: hidden;
+        }
+        .profilepic{
+            width: 100%;
+            height: 400px;
+            background-size: cover;
+        }
+        .question_textarea{
+            float: left;
+            width: 100%;
+            height: 100px;
+        }
+        textarea{
+            border: none;
+        }
